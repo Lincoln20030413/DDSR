@@ -7,8 +7,9 @@ The order of running code:
 1. RRDB_LR encoder
 2. Kernel predictor
 3. HR reconstructor
+(Check framework for more details)
 
-The dataset is from:
+The datasets are from:
 https://pan.bnu.edu.cn/l/EFKfQK 
 
 To transform datasets to binary files for efficient IO, run:
