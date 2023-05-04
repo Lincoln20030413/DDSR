@@ -6,7 +6,6 @@ The code is based on https://github.com/megvii-research/DCLS-SR/tree/master/code
 1. RRDB_LR encoder (The pretrained RRDB_LR encoder has been given in the foler"Pretrained rrdb_LR encoder")
 2. Kernel Predictor
 3. HR reconstructor
-(Check framework for more details)
 
 # Dataset
 The datasets are from:
