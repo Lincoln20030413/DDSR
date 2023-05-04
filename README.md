@@ -1,6 +1,6 @@
 # DDSR
 PyTorch code for paper "Dual-Diffusion: Dual Conditional Denoising Diffusion Probabilistic Models for Blind Super-Resolution Reconstruction in RSIs".
-The code is based on 
+The code is based on https://github.com/megvii-research/DCLS-SR/tree/master/codes
 
 
 The order of running code:
