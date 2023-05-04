@@ -14,9 +14,9 @@ https://pan.bnu.edu.cn/l/EFKfQK
 
 To transform datasets to binary files for efficient IO, run:
 
-python3 codes/scripts/create_lmdb.py
+python codes/scripts/create_lmdb.py
 
 To generate LRblur/LR_up/Bicubic datasets paths, run:
 
-python3 codes/scripts/generate_mod_blur_LR_bic.py
+python codes/scripts/generate_mod_blur_LR_bic.py
 (You need to modify the file paths by yourself.)
