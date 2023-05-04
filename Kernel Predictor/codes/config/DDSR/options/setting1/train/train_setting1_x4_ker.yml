@@ -1,0 +1,67 @@
+#### general settings
+name: Predictorx4_setting1
+use_tb_logger: true
+model: blind_ker
+distortion: sr
+scale: 4
+rrdb_ckpt: /student24/xmz/rrdbnet_ckpt/s4_28000_G.ckpt
+gpu_ids: [0, 1, 2, 3]
+
+degradation:
+  random_kernel: True
+  ksize: 21
+  code_length: 10
+  sig_min: 0.2
+  sig_max: 4.0
+  rate_iso: 1.0
+  random_disturb: false
+
+#### datasets
+datasets:
+  train:
+    name: DIV2K
+    mode: LQGTker
+    dataroot_GT: /student/xmz/ours/dataset/source/l.lmdb
+    dataroot_LQ: /student/xmz/ours/dataset/HRblur_aniso/x4/l.lmdb
+    use_shuffle: true
+    n_workers: 8  # per GPU
+    batch_size: 32
+    GT_size: 128
+    LR_size: 32
+    use_flip: true
+    use_rot: true
+    color: RGB
+  val:
+    name: Set5
+    mode: LQGT
+    dataroot_GT: /student/xmz/ours/dataset/val/l.lmdb
+    dataroot_LQ: /student/xmz/ours/dataset/HRblur_aniso_v/x4/l.lmdb
+
+#### path
+path:
+  pretrain_model_G: ~
+  strict_load: true
+  resume_state: ~
+
+#### training settings: learning rate scheme, loss
+train:
+  lr: !!float 2e-4
+  lr_scheme: MultiStepLR
+  beta1: 0.9
+  beta2: 0.99
+  niter: 90000
+  warmup_iter: -1  # no warm up
+  lr_steps: 100000
+  lr_gamma: 0.5
+  eta_min: !!float 1e-7
+
+  pixel_criterion: l1
+  pixel_weight: 1.0
+
+  manual_seed: 0
+  val_freq: !!float 2e3
+
+#### logger
+logger:
+  print_freq: 20
+  save_checkpoint_freq: !!float 2e3

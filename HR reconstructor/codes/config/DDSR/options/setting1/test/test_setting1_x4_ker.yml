@@ -1,0 +1,26 @@
+name: DDSRx4_setting1
+suffix: x4 # add suffix to saved images
+model: blind_ker
+distortion: sr
+scale: 4
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+rrdb_ckpt: /student24/xmz/rrdbnet_ckpt/s4_28000_G.ckpt #Pretrained RRDB encoder
+gpu_ids: [0]
+
+datasets:
+
+  test1:
+    name: Geo
+    mode: LQGT
+    dataroot_GT: /student24/xmz/Divided/geo_test/l.lmdb
+    dataroot_LQ: /student24/xmz/Divided/geo/HR_blur/1.2_2.4_0/x4/l.lmdb
+
+  test2:
+    name: Goo
+    mode: LQGT
+    dataroot_GT: /student24/xmz/Divided/goo_test/l.lmdb
+    dataroot_LQ: /student24/xmz/Divided/goo/HR_blur/1.2_2.4_0/x4/l.lmdb
+
+#### path
+path:
+  pretrain_model_G: /student/xmz/ours_new2/codes/config/DDSR/log/DDSRx4_setting1/models/210000_G.pth
