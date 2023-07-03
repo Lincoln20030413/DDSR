@@ -8,8 +8,7 @@ The code is based on https://github.com/megvii-research/DCLS-SR/tree/master/code
 3. HR reconstructor
 
 # Dataset
-The datasets are shared at:
-[https://pan.bnu.edu.cn/l/EFKfQK ](https://pan.baidu.com/s/1eD_mbFoNdPWfY8TCkjjfeA?pwd=j3vq )
+The link to the dataset: https://pan.baidu.com/s/1eD_mbFoNdPWfY8TCkjjfeA?pwd=j3vq
 
 To transform datasets to binary files for efficient IO, run:
 
