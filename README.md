@@ -3,7 +3,7 @@ PyTorch code for paper "Dual-Diffusion: Dual Conditional Denoising Diffusion Pro
 The code is based on https://github.com/megvii-research/DCLS-SR/tree/master/codes
 
 # The order of running code:
-1. RRDB_LR encoder (The pretrained RRDB_LR encoder has been given in the foler"Pretrained rrdb_LR encoder")
+1. RRDB_LR encoder (The pretrained RRDB_LR encoder has been given in the folder "Pretrained rrdb_LR encoder")
 2. Kernel Predictor
 3. HR reconstructor
 
