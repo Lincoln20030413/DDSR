@@ -21,12 +21,16 @@ python codes/scripts/generate_mod_blur_LR_bic.py
 
 # Supplementary experiments
 1. How good is the proposed HR reconstructor compared to non-blind methods when all those methods are given the same (predicted or true) kernel？
+   Visual comparison
    ![image](https://github.com/Lincoln20030413/DDSR/assets/72965675/ab2bda51-b420-4512-a42d-076f6c5792cc)
+   Quantitive results
    ![c26cbadd8186f509a09082d998bfd35](https://github.com/Lincoln20030413/DDSR/assets/72965675/cda2f357-ab3a-4ff6-b8f0-06c30568cfd7)
    ![4476c2cebe3eb361a36cd86b2145242](https://github.com/Lincoln20030413/DDSR/assets/72965675/3fba715b-941a-488c-9821-71f27a0935dd)
 
-3. How good is the kernel predictor compared to the other blind methods' predictors
+2. How good is the kernel predictor compared to the other blind methods' predictors
+   Visual comparison
    ![7ce23fae28bb9622b2d7f772b8cdcbc](https://github.com/Lincoln20030413/DDSR/assets/72965675/9f366023-4435-4337-a8c0-171c9c822a86)
+   Quantitive results
    ![f8f284bdeaa819e46975db3a026e8a1](https://github.com/Lincoln20030413/DDSR/assets/72965675/d4aa3bc5-64b9-4de7-b700-1ff22a0ad86e)
 
 
