@@ -27,6 +27,7 @@ python codes/scripts/generate_mod_blur_LR_bic.py
 
 2. How good is the kernel predictor compared to the other blind methods' predictors
    ![7ce23fae28bb9622b2d7f772b8cdcbc](https://github.com/Lincoln20030413/DDSR/assets/72965675/9f366023-4435-4337-a8c0-171c9c822a86)
+   
    ![f8f284bdeaa819e46975db3a026e8a1](https://github.com/Lincoln20030413/DDSR/assets/72965675/d4aa3bc5-64b9-4de7-b700-1ff22a0ad86e)
 
 
