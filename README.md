@@ -19,7 +19,7 @@ To generate LRblur/LR_up/Bicubic datasets paths, run:
 python codes/scripts/generate_mod_blur_LR_bic.py
 (You need to modify the file paths by yourself.)
 
-# supplementary experiments
+# Supplementary experiments
 1. How good is the proposed HR reconstructor compared to non-blind methods when all those methods are given the same (predicted or true) kernel？
    ![image](https://github.com/Lincoln20030413/DDSR/assets/72965675/ab2bda51-b420-4512-a42d-076f6c5792cc)
    ![86528bc63c08d85b49414e405b37e7f](https://github.com/Lincoln20030413/DDSR/assets/72965675/d045fd2f-9c72-4796-a2f8-18c8ce97eccf)
