@@ -78,12 +78,6 @@ def parse(opt_path, is_train=True):
         opt["path"]["results_root"] = osp.join(results_root, opt["name"])
         opt["path"]["log"] = osp.join(results_root, opt["name"])
 
-    # network
-    if opt["model"] == "blind":
-        opt["network_G"]["setting"]["pca_matrix_path"] = opt["pca_matrix_path"]
-    if opt["distortion"] == "sr":
-        opt["network_G"]["setting"]["upscale"] = scale
-
     return opt
 
 
