@@ -5,6 +5,7 @@ model: rrdb
 distortion: sr
 scale: 4
 gpu_ids: [0, 1, 2, 3]
+pca_matrix_path: ../../../pca_matrix/DCLS/pca_matrix.pth
 
 degradation:
   random_kernel: True
