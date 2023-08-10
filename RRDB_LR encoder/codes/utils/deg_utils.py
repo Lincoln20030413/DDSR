@@ -320,7 +320,7 @@ class SRMDPreprocessing(object):
         rate_iso=1.0, rate_cln=0.2, noise_high=0.08,
     ):
         pca_matrix = torch.load(
-        "/student/xmz/DCLS-SR-master/pca_matrix/DCLS/pca_matrix.pth", map_location=lambda storage, loc: storage
+        "/student/xmz/ours_rrdb/pca_matrix/DCLS/pca_matrix.pth", map_location=lambda storage, loc: storage
         )
         self.encoder = PCAEncoder(pca_matrix).cuda() 
 
